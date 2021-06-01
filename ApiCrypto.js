@@ -11,7 +11,9 @@ class ApiCrypto {
                 url: `https://rest.coinapi.io/v1/symbols/${exchangeId}`,
                 headers: { 'X-CoinAPI-Key': this.apiKey }
             })
-            .catch(err => console.error(err));
+            .catch(err => {
+                return err.response
+            });
     }
 
     async getExchanges(exchangeId) {
@@ -20,7 +22,9 @@ class ApiCrypto {
                 url: `https://rest.coinapi.io/v1/exchanges/${exchangeId}`,
                 headers: { 'X-CoinAPI-Key': this.apiKey }
             })
-            .catch(err => console.error(err));
+            .catch(err => {
+                return err.response
+            });
     }
 
     async getHistoricalQuote(symbolId, timeStart, timeEnd) {
@@ -29,7 +33,9 @@ class ApiCrypto {
                 url: `https://rest.coinapi.io/v1/quotes/${symbolId}/history?time_start=${timeStart}&time_end=${timeEnd}&limit=1`,
                 headers: { 'X-CoinAPI-Key': this.apiKey }
             })
-            .catch(err => console.error(err));
+            .catch(err => {
+                return err.response
+            });
     }
 }
 
