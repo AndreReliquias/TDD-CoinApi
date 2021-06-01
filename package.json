@@ -1,0 +1,16 @@
+{
+    "name": "tdd-coinapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --detectOpenHandles"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "axios": "^0.21.1",
+        "jest": "^27.0.3",
+        "nock": "^13.0.11"
+    }
+}
