@@ -28,7 +28,7 @@ function getHistoricalQuoteMock(expectResponse) {
         .reply(expectResponse, `Response ${expectResponse}`);
 }
 
-jest.setTimeout(100000000)
+jest.setTimeout(100000000);
 describe('Tests', () => {
     describe('Http Response 200', () => {
         test('getSymbols()', async() => {

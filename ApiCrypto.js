@@ -12,7 +12,7 @@ class ApiCrypto {
                 headers: { 'X-CoinAPI-Key': this.apiKey }
             })
             .catch(err => {
-                return err.response
+                return err.response;
             });
     }
 
@@ -23,7 +23,7 @@ class ApiCrypto {
                 headers: { 'X-CoinAPI-Key': this.apiKey }
             })
             .catch(err => {
-                return err.response
+                return err.response;
             });
     }
 
@@ -34,7 +34,7 @@ class ApiCrypto {
                 headers: { 'X-CoinAPI-Key': this.apiKey }
             })
             .catch(err => {
-                return err.response
+                return err.response;
             });
     }
 }
